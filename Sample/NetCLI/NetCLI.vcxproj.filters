@@ -24,6 +24,9 @@
     <ClInclude Include="pch.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="SampleWrapper.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="NetCLI.cpp">
@@ -33,6 +36,9 @@
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleWrapper.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
