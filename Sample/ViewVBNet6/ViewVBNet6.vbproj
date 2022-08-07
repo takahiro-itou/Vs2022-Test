@@ -6,15 +6,23 @@
         net6.0-windows;
         net48;
     </TargetFrameworks>
-    <StartupObject>Sub Main</StartupObject>
+    <StartupObject>ViewVBNet6.Form1</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <ItemGroup>
     <Import Include="System.Data" />
     <Import Include="System.Drawing" />
     <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net48' ">
+    <ProjectReference Include="..\NetFramework48CLI\NetFramework48CLI.vcxproj" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0-windows' ">
+    <ProjectReference Include="..\NetCLI\NetCLI.vcxproj" />
   </ItemGroup>
 
   <ItemGroup>
